@@ -32,7 +32,6 @@ export default function Footer(){
     <Link
       key={index}
       className={classes.link}
-      component="a"
       href={link.link}
       // onClick={(event) => event.preventDefault()}
     >

@@ -29,7 +29,7 @@
 }
 
 .content {
-  width: 50%;
+  width: 45%;
   font-size: rem(20px);
   display: flex;
   flex-direction: column;
@@ -49,10 +49,8 @@
 }
 
 .image_container {
-  width: 100%;
+  width: 50%;
   height: 53vh;
-  position: relative;
-  aspect-ratio: 16/9;
   border-radius: rem(14px);
 }
 

@@ -13,6 +13,9 @@ const theme = createTheme({
 export const metadata: Metadata = {
   title: "Fight Club Nepal",
   description: "Unleash your inner fighter",
+  icons: {
+    icon: './favicon.ico'
+  }
 };
 
 export default function RootLayout({

@@ -6,17 +6,17 @@ export default function Coach() {
   let coaches = [
   {
     img: '/about_photo.jpg',
-    name: 'John Doe',
+    name: 'John Doe 1',
     post: 'Coach'
   },
   {
     img: '/about_photo.jpg',
-    name: 'John Doe',
+    name: 'John Doe 2',
     post: 'Coach'
   },
   {
     img: '/about_photo.jpg',
-    name: 'John Doe',
+    name: 'John Doe 3',
     post: 'Coach'
   },
 
@@ -36,7 +36,7 @@ export default function Coach() {
                 <Image
                   alt="Image"
                   src="/about_photo.jpg"
-                  fill="true"
+                  fill={true}
                   // objectFit="co ver" // Scale your image down to fit into the container
                   className={styles.image}
                 />
