@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Inter:wght@100..900&display=swap');
+
+.wrapper {
+  position: relative;
+  /* top: 0; */
+  /* width: 100%; */
+  padding-top: rem(180px);
+  padding-bottom: rem(130px);
+  background-image: url(/hero_image.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: rem(130px);
+    padding-bottom: rem(50px);
+  }
+  /* z-index: -1; */
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 800;
+  font-size: rem(70px);
+  letter-spacing: rem(-1px);
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  color: var(--mantine-color-white);
+  margin-bottom: var(--mantine-spacing-xs);
+  text-align: center;
+  font-family: "Finger Paint", sans-serif;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(35px);
+    text-align: left;
+  }
+}
+
+.highlight {
+  color: var(--mantine-color-primary-4);
+}
+
+.description {
+  color: var(--mantine-color-gray-0);
+  text-align: center;
+  font-family: "Finger Paint", sans-serif;
+  font-size: rem(40px);
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: var(--mantine-font-size-md);
+    text-align: left;
+  }
+}
+
+.controls {
+  margin-top: calc(var(--mantine-spacing-xl) * 0.5);
+  display: flex;
+  justify-content: center;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+    margin-top: calc(var(--mantine-spacing-xl) * 0.5);
+  }
+}
+
+.control {
+  height: rem(42px);
+  width: 25%;
+  font-size: var(--mantine-font-size-lg);
+  
+  &:not(:first-of-type) {
+    margin-left: var(--mantine-spacing-md);
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin-top: var(--mantine-spacing-xs);
+      margin-left: 0;
+      width: 100%;
+
+    }
+  }
+}
+
+.control.span {
+font-family: "Finger Paint", sans-serif;
+
+
+}
+
+.secondaryControl {
+  color: var(--mantine-color-white);
+  background-color: rgba(255, 255, 255, 0.4);
+
+  @mixin hover {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+}
