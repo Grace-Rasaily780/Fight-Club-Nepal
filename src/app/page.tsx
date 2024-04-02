@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Header from "../components/Header.tsx";
-import About from "../components/About.tsx";
-import Service from "../components/Service.tsx"
-import Coach from "../components/Coach.tsx"
-import Contact from "../components/Contact.tsx";
+import Header from "../components/Header";
+import About from "../components/About";
+import Service from "../components/Service"
+import Coach from "../components/Coach"
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
