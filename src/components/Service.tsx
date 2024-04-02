@@ -33,7 +33,7 @@ export default function Service() {
                 <Image
                   alt="Image"
                   src="/about_photo.jpg"
-                  fill="true"
+                  fill={true}
                   // objectFit="co ver" // Scale your image down to fit into the container
                   className={styles.image}
                 />
