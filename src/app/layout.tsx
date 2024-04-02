@@ -3,7 +3,7 @@ import "./globals.css";
 import { createTheme, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer.tsx"
+import Footer from "../components/Footer"
 
 const theme = createTheme({
   fontFamily: 'Inter, sans-serif',
