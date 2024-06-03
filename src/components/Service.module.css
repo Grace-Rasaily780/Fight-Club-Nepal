@@ -1,34 +1,38 @@
 .container {
   margin: rem(70px) 0;
   padding: 0 rem(120px);
+
   /* display: flex; */
   /* justify-content: space-between; */
   /* align-items: center; */
-@media (max-width: $mantine-breakpoint-sm) {
-  padding: 0 rem(25px);
-}
-
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: 0 rem(25px);
+  }
 }
 
 .title {
   font-size: rem(55px);
-  color: #1B1B1B;
+  color: #1b1b1b;
   width: 100%;
-@media (max-width: $mantine-breakpoint-sm) {
-  font-size: rem(42px);
-} 
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(42px);
+  }
 }
 
 .card_container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  padding: rem(40px) 0;
-@media (max-width: $mantine-breakpoint-sm) {
-  flex-direction: column;
   gap: rem(20px);
-} 
+  padding: rem(40px) 0;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+    gap: rem(20px);
+  }
 }
 
 .card {
@@ -36,10 +40,11 @@
   height: rem(400px);
   border-radius: rem(14px);
   position: relative;
-@media (max-width: $mantine-breakpoint-sm) {
-  width: 100%;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+  }
 }
- }
 
 .card_text {
   position: absolute;
@@ -48,8 +53,9 @@
   z-index: 1;
   font-size: rem(60px);
   margin-bottom: rem(35px);
-  line-height: rem(60px)!important;
+  line-height: rem(60px) !important;
   color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .image_container {
