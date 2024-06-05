@@ -18,6 +18,7 @@
 .description {
   margin-top: rem(5px);
   width: 100%;
+
   @media (max-width: $mantine-breakpoint-sm) {
     margin-top: var(--mantine-spacing-xs);
     text-align: center;
@@ -66,7 +67,7 @@
     Greycliff CF,
     var(--mantine-font-family);
   margin-bottom: calc(var(--mantine-spacing-xs) / 2);
-  color: #fff; 
+  color: #fff;
 }
 
 .afterFooter {
@@ -81,6 +82,10 @@
     flex-direction: column;
     text-align: center;
   }
+}
+
+.afterFooter a {
+  color: #868e96;
 }
 
 .social {

@@ -1,21 +1,40 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { createTheme, MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
+import { createTheme, MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const theme = createTheme({
-  fontFamily: 'Inter, sans-serif',
-  headings: { fontFamily: 'Finger Paint, sans-serif' },
+  fontFamily: "Inter, sans-serif",
+  headings: { fontFamily: "Finger Paint, sans-serif" },
 });
 
 export const metadata: Metadata = {
   title: "Fight Club Nepal",
   description: "Unleash your inner fighter",
+  keywords: [
+    "Fight Club",
+    "Fight Club Nepal",
+    "MMA",
+    "Kick Boxing",
+    "Boxing",
+    "Wushu Sanda",
+    "Muay Thai",
+  ],
+  authors: [
+    { name: "Grace Rasaily", url: "https://github.com/Grace-Rasaily780" },
+  ],
+  // url: 'https://fightclubnepal.com/',
+  // siteName: "Fight Club Nepal",
   icons: {
-    icon: './favicon.ico'
-  }
+    icon: "./favicon.ico",
+  },
+  openGraph: {
+    images: "./logo_full.svg",
+  },
+  // locale: "en_US",
+  // type: "website",
 };
 
 export default function RootLayout({
@@ -26,11 +45,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <MantineProvider theme={theme}>
-        <Navbar />
-        {children}
-        <Footer />
-      </MantineProvider>
+        <MantineProvider theme={theme}>
+          <Navbar />
+          {children}
+          <Footer />
+        </MantineProvider>
       </body>
     </html>
   );
