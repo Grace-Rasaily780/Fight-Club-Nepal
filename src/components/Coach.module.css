@@ -1,47 +1,53 @@
 .container {
   margin: rem(70px) 0;
   padding: 0 rem(120px);
+
   /* display: flex; */
   /* justify-content: space-between; */
   /* align-items: center; */
-@media (max-width: $mantine-breakpoint-sm) {
-  padding: 0 rem(25px);
-}
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: 0 rem(25px);
+  }
 }
 
 .title {
   font-size: rem(55px);
-  color: #1B1B1B;
+  color: #1b1b1b;
   width: 100%;
-@media (max-width: $mantine-breakpoint-sm) {
-  font-size: rem(42px);
-}
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(42px);
+  }
 }
 
 .card_container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: rem(40px) 0;
-@media (max-width: $mantine-breakpoint-sm) {
-  flex-direction: column;
-  gap: rem(80px);
-} 
+  gap: rem(20px);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+    gap: rem(80px);
+  }
 }
 
 .card {
   width: 31.5%;
   height: rem(400px);
   border-radius: rem(14px);
-@media (max-width: $mantine-breakpoint-sm) {
-  width: 100%;
-}
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+  }
+
   /* position: relative; */
- }
+}
 
 .card_text {
-  margin: 0!important;
+  margin: 0 !important;
   padding-top: 3%;
 }
 
@@ -50,13 +56,12 @@
   line-height: rem(30px);
   font-weight: bold;
   color: #1b1b1b;
-  margin: 0!important;
-
+  margin: 0 !important;
 }
 
 .post {
-  color: #EF233C;
-  margin: 0!important;
+  color: #ef233c;
+  margin: 0 !important;
 }
 
 .image_container {

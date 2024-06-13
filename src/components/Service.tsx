@@ -1,3 +1,4 @@
+"use client";
 import styles from "./Service.module.css";
 import { Title } from "@mantine/core";
 import Image from "next/image";
@@ -31,7 +32,16 @@ export default function Service() {
 
       <div className={styles.card_container}>
         {services.map((service) => (
-          <div className={styles.card} key={service.service}>
+          <div
+            className={styles.card}
+            key={service.service}
+            onClick={() => {
+              window.open(
+                "https://fightclubnepal.com/wordpress/membership",
+                "_blank",
+              );
+            }}
+          >
             <p className={styles.card_text}>{service.service}</p>
             <div className={styles.image_container}>
               <Image
